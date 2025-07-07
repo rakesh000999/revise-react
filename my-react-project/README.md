@@ -2,6 +2,7 @@
 - Component
 - Fragment
 - JSX
+- Props and Objec Destructuring
 
 ## Clone this repository
 ```bash

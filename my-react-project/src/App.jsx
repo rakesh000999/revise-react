@@ -1,5 +1,6 @@
 // import React from 'react'
 
+import LearnEvent from "./components/LearnEvent"
 import LearnJSX from "./components/LearnJSX"
 import LearnProps from "./components/LearnProps"
 
@@ -9,7 +10,8 @@ function App() {
   return (
     <>
       <h1>App Conponent</h1>
-      <LearnProps stock="Tesla" price={price} />
+      {/* <LearnProps stock="Tesla" price={price} /> */}
+      <LearnEvent />
     </>
   )
 }
