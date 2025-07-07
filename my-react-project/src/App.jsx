@@ -1,5 +1,6 @@
 // import React from 'react'
 
+import CounterApp from "./components/CounterApp"
 import LearnEvent from "./components/LearnEvent"
 import LearnJSX from "./components/LearnJSX"
 import LearnLiftingStateUp from "./components/LearnLiftingStateUp"
@@ -19,7 +20,8 @@ function App() {
       {/* <LearnProps stock="Tesla" price={price} /> */}
       {/* <LearnEvent /> */}
       {/* <LearnLiftingStateUp getStock={getStock} /> */}
-      <LearnUseState />
+      {/* <LearnUseState /> */}
+      <CounterApp />
     </>
   )
 }
