@@ -1,8 +1,10 @@
 # Revising React
-- Component
+- Components
 - Fragment
 - JSX
-- Props and Objec Destructuring
+- Props and Object Destructuring
+- Events
+- Lifting State Up
 
 ## Clone this repository
 ```bash
