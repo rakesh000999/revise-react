@@ -1,5 +1,6 @@
 // import React from 'react'
 
+import ChildA from "./components/ChildA"
 import CounterApp from "./components/CounterApp"
 import LearnEvent from "./components/LearnEvent"
 import LearnJSX from "./components/LearnJSX"
@@ -11,6 +12,7 @@ import LearnUseState from "./components/LearnUseState"
 
 function App() {
   // let price = 200
+  let stock = "Tesla"
 
   const getStock = (stock) => {
     console.log(stock);
@@ -25,7 +27,8 @@ function App() {
       {/* <LearnUseState /> */}
       {/* <CounterApp /> */}
       {/* <LearnUseEffect /> */}
-      <LearnUseMemo />
+      {/* <LearnUseMemo /> */}
+      <ChildA stock={stock} />
     </>
   )
 }
