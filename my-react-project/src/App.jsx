@@ -6,6 +6,7 @@ import LearnJSX from "./components/LearnJSX"
 import LearnLiftingStateUp from "./components/LearnLiftingStateUp"
 import LearnProps from "./components/LearnProps"
 import LearnUseEffect from "./components/LearnUseEffect"
+import LearnUseMemo from "./components/LearnUseMemo"
 import LearnUseState from "./components/LearnUseState"
 
 function App() {
@@ -23,7 +24,8 @@ function App() {
       {/* <LearnLiftingStateUp getStock={getStock} /> */}
       {/* <LearnUseState /> */}
       {/* <CounterApp /> */}
-      <LearnUseEffect />
+      {/* <LearnUseEffect /> */}
+      <LearnUseMemo />
     </>
   )
 }
