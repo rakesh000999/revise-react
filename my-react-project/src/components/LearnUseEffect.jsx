@@ -16,15 +16,20 @@ const LearnUseEffect = () => {
 
     useEffect(() => {
         console.log("Use Effect is called");
+
+        // Clean up function
+        return () => {
+            console.log("Cleanup function is called");
+        }
     })
 
-    useEffect(() => {
-        console.log("Use Effect is called");
-    }, [])
+    // useEffect(() => {
+    //     console.log("Use Effect is called");
+    // }, [])
 
-    useEffect(() => {
-        console.log("Use Effect is called");
-    }, [count, randomNumber])
+    // useEffect(() => {
+    //     console.log("Use Effect is called");
+    // }, [count, randomNumber])
 
     return (
         <>
