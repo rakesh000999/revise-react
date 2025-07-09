@@ -14,6 +14,7 @@ import LearnConditionalRendering from "./components/LearnConditionalRendering"
 import LearnMap from "./components/LearnMap"
 import LearnInlineCSS from "./components/LearnInlineCSS"
 import LearnLoadingImages from "./components/LearnLoadingImages"
+import LearnForms from "./components/LearnForms"
 
 // Context API is used to share data between components without passing props through every level of the component tree.
 
@@ -57,7 +58,8 @@ function App() {
       {/* <LearnConditionalRendering /> */}
       {/* <LearnMap /> */}
       {/* <LearnInlineCSS /> */}
-      <LearnLoadingImages />
+      {/* <LearnLoadingImages /> */}
+      <LearnForms />
     </>
   )
 }
