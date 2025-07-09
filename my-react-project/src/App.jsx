@@ -13,6 +13,7 @@ import ChildA from "./components/ChildA"
 import LearnUseRef from "./components/LearnUseRef"
 import LearnCustomHooks from "./components/LearnCustomHooks"
 import LearnConditionalRendering from "./components/LearnConditionalRendering"
+import LearnMap from "./components/LearnMap"
 
 // Context API is used to share data between components without passing props through every level of the component tree.
 
@@ -53,7 +54,8 @@ function App() {
 
       {/* <LearnUseRef /> */}
       {/* <LearnCustomHooks /> */}
-      <LearnConditionalRendering />
+      {/* <LearnConditionalRendering /> */}
+      <LearnMap />
     </>
   )
 }
