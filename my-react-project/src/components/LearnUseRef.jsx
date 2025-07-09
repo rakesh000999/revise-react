@@ -1,4 +1,4 @@
-import React, { useState, useRef } from 'react'
+import { useState, useRef } from 'react'
 
 const LearnUseRef = () => {
     const [name, setName] = useState("")
@@ -14,8 +14,8 @@ const LearnUseRef = () => {
     const handleInput = (e) => {
         previousNameRef.current = name
         setName(e.target.value)
-
     }
+
     return (
         <>
             <h1>Learn useRef</h1>

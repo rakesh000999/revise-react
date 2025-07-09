@@ -11,6 +11,7 @@ import LearnUseMemo from "./components/LearnUseMemo"
 import LearnUseState from "./components/LearnUseState"
 import ChildA from "./components/ChildA"
 import LearnUseRef from "./components/LearnUseRef"
+import LearnCustomHooks from "./components/LearnCustomHooks"
 
 // Context API is used to share data between components without passing props through every level of the component tree.
 
@@ -49,7 +50,8 @@ function App() {
         </UserContext.Provider>
       </StockContext.Provider> */}
 
-      <LearnUseRef />
+      {/* <LearnUseRef /> */}
+      <LearnCustomHooks />
     </>
   )
 }
