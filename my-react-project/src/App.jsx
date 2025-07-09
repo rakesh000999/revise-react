@@ -12,6 +12,7 @@ import LearnUseState from "./components/LearnUseState"
 import ChildA from "./components/ChildA"
 import LearnUseRef from "./components/LearnUseRef"
 import LearnCustomHooks from "./components/LearnCustomHooks"
+import LearnConditionalRendering from "./components/LearnConditionalRendering"
 
 // Context API is used to share data between components without passing props through every level of the component tree.
 
@@ -35,7 +36,7 @@ function App() {
 
   return (
     <>
-      <h1>App Component</h1>
+      {/* <h1>App Component</h1> */}
       {/* <LearnProps stock="Tesla" price={price} /> */}
       {/* <LearnEvent /> */}
       {/* <LearnLiftingStateUp getStock={getStock} /> */}
@@ -51,7 +52,8 @@ function App() {
       </StockContext.Provider> */}
 
       {/* <LearnUseRef /> */}
-      <LearnCustomHooks />
+      {/* <LearnCustomHooks /> */}
+      <LearnConditionalRendering />
     </>
   )
 }
