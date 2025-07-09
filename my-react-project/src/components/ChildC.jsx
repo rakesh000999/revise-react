@@ -1,10 +1,14 @@
-import React from 'react'
+import { useContext } from 'react'
 import { StockContext, UserContext } from '../App'
 
 const ChildC = () => {
+
+    const stockData = useContext(StockContext);
+    const userData = useContext(UserContext);
+
     return (
         <>
-            <StockContext.Consumer>
+            {/* <StockContext.Consumer>
                 {
                     ({ stock, price }) => {
                         return (
@@ -24,7 +28,14 @@ const ChildC = () => {
                         )
                     }
                 }
-            </StockContext.Consumer>
+            </StockContext.Consumer> */}
+
+
+            <h2>User: {userData.user.name}</h2>
+            <h2>Logged In?: {userData.user.isLoggedIn}</h2>
+            <h2>ChildC : {stockData.stock}</h2>
+
+
         </>
     )
 }
