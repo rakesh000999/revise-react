@@ -1,6 +1,6 @@
 // import React from 'react'
 
-import { createContext } from "react"
+import { createContext, useState } from "react"
 import CounterApp from "./components/CounterApp"
 import LearnEvent from "./components/LearnEvent"
 import LearnJSX from "./components/LearnJSX"
@@ -16,10 +16,15 @@ import ChildA from "./components/ChildA"
 // create , provider, consumer
 
 const StockContext = createContext();
+const UserContext = createContext();
 
 function App() {
   let price = 200
   let stock = "Tesla"
+
+  const [user, setUser] = useState(
+    { name: 'Rakesh', isLoggedIn: 'Yes' }
+  );
 
   const getStock = (stock) => {
     console.log(stock);
@@ -38,11 +43,13 @@ function App() {
       {/* <LearnUseMemo /> */}
 
       <StockContext.Provider value={{ stock, price }}>
-        <ChildA />
+        <UserContext.Provider value={{ user, setUser }}>
+          <ChildA />
+        </UserContext.Provider>
       </StockContext.Provider>
     </>
   )
 }
 
 export default App
-export { StockContext }
+export { StockContext, UserContext }

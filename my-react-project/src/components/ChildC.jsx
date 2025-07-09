@@ -1,5 +1,5 @@
 import React from 'react'
-import { StockContext } from '../App'
+import { StockContext, UserContext } from '../App'
 
 const ChildC = () => {
     return (
@@ -8,9 +8,19 @@ const ChildC = () => {
                 {
                     ({ stock, price }) => {
                         return (
-                            <>
-                                <h2>ChildC - {stock}: {price}</h2>
-                            </>
+                            <UserContext.Consumer>
+                                {
+                                    ({ user }) => {
+                                        return (
+                                            <>
+                                                <h2>User: {user.name}</h2>
+                                                <h2>Logged In : {user.isLoggedIn}</h2>
+                                                <h2>ChildC - {stock}: {price}</h2>
+                                            </>
+                                        )
+                                    }
+                                }
+                            </UserContext.Consumer>
                         )
                     }
                 }
