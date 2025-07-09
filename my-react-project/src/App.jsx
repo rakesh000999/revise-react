@@ -1,5 +1,3 @@
-// import React from 'react'
-
 import { createContext, useState } from "react"
 import CounterApp from "./components/CounterApp"
 import LearnEvent from "./components/LearnEvent"
@@ -15,6 +13,7 @@ import LearnCustomHooks from "./components/LearnCustomHooks"
 import LearnConditionalRendering from "./components/LearnConditionalRendering"
 import LearnMap from "./components/LearnMap"
 import LearnInlineCSS from "./components/LearnInlineCSS"
+import LearnLoadingImages from "./components/LearnLoadingImages"
 
 // Context API is used to share data between components without passing props through every level of the component tree.
 
@@ -57,7 +56,8 @@ function App() {
       {/* <LearnCustomHooks /> */}
       {/* <LearnConditionalRendering /> */}
       {/* <LearnMap /> */}
-      <LearnInlineCSS />
+      {/* <LearnInlineCSS /> */}
+      <LearnLoadingImages />
     </>
   )
 }
